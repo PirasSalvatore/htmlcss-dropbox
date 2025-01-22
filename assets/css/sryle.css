@@ -1,0 +1,56 @@
+/* #region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+/* #endregion common */
+
+/* #region utility */
+:root {}
+
+.debug {
+
+    header {
+        min-height: 50px;
+        background-color: blue;
+
+        .nav-container {
+            background-color: yellow;
+
+            .left-menu {
+                background-color: red;
+            }
+
+            .right-menu {
+                background-color: red;
+            }
+        }
+    }
+
+
+}
+
+
+/* #endregion utility */
+
+/* #region header */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #endregion header */
+
+/* #region main */
+
+
+
+/* #endregion main */
