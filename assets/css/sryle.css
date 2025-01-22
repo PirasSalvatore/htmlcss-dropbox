@@ -13,7 +13,13 @@ body {
 /* #endregion common */
 
 /* #region utility */
-:root {}
+:root {
+
+    --db-primary-lighter: #ffffff;
+    --db-primary-light: #b4d0e6;
+    --db-primary-dark: #0061fe;
+    --db-primary-darker: #000000;
+}
 
 .debug {
 
@@ -69,14 +75,52 @@ body {
 
 }
 
+.d-flex {
+    display: flex;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: var(--db-primary-dark);
+    color: var(--db-primary-lighter);
+    padding: 0.2rem 0.5rem;
+}
 
 /* #endregion utility */
 
 /* #region header */
 
+header {
+    background-color: var(--db-primary-lighter);
+}
+
 .nav-container {
-    display: flex;
     justify-content: space-between;
+    padding: 1rem;
+
+    .left-menu,
+    .right-menu {
+        align-items: center;
+        font-size: 10px;
+        gap: 0.2rem;
+
+        .logo img {
+            width: 75px;
+        }
+
+        ul {
+            li {
+                list-style: none;
+                padding: 0.5rem;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+    }
 }
 
 /* #endregion header */
