@@ -13,6 +13,7 @@ body {
 /* #endregion common */
 
 /* #region utility */
+
 :root {
 
     --db-primary-lighter: #ffffff;
@@ -73,6 +74,9 @@ body {
         }
     }
 
+    [class^="col"] {
+        background-color: aqua;
+    }
 }
 
 .d-flex {
@@ -86,6 +90,68 @@ body {
     padding: 0.2rem 0.5rem;
 }
 
+/* #region row&col */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: auto;
+    flex-basis: auto;
+}
+
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* #endregion row&col */
+
 /* #endregion utility */
 
 /* #region header */
@@ -96,7 +162,7 @@ header {
 
 .nav-container {
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
 
     .left-menu,
     .right-menu {
@@ -128,10 +194,18 @@ header {
 /* #region main */
 
 .jumbotron {
+    background-color: var(--db-primary-light);
 
     .j-container {
-        width: 90%;
+        width: 80%;
         margin: auto;
+        padding-top: 2rem;
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 1000;
+        }
     }
 
 }
