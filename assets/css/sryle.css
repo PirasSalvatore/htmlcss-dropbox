@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 html,
@@ -197,15 +198,42 @@ header {
     background-color: var(--db-primary-light);
 
     .j-container {
-        width: 80%;
+        width: 85%;
         margin: auto;
         padding-top: 2rem;
 
         h1 {
-            text-align: center;
             font-size: 50px;
             font-weight: 1000;
         }
+
+        p {
+            padding-top: 2rem;
+            font-size: 12px;
+            padding-bottom: 2rem;
+        }
+
+        .text div {
+            padding: 1rem 0;
+
+            a {
+                i {
+                    font-size: 30px;
+                    color: var(--db-primary-darker);
+                }
+            }
+        }
+
+    }
+
+    .figure {
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        margin-bottom: -2rem;
     }
 
 }
