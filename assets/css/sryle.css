@@ -34,6 +34,22 @@ body {
         }
     }
 
+    main {
+
+        background-color: gray;
+        min-height: 500px;
+
+        .jumbotron {
+            min-height: 50px;
+            background-color: green;
+
+            .j-container {
+                min-height: 50px;
+                background-color: blueviolet;
+            }
+
+        }
+    }
 
 }
 
@@ -51,6 +67,15 @@ body {
 
 /* #region main */
 
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    .j-container {
+        width: 90%;
+    }
+
+}
 
 /* #endregion main */
