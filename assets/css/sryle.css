@@ -49,6 +49,22 @@ body {
             }
 
         }
+
+        .content-container {
+            min-height: 450px;
+            background: black;
+        }
+    }
+
+    footer {
+        min-height: 85px;
+        background-color: brown;
+
+        .f-container {
+
+            min-height: 85px;
+            background-color: wheat;
+        }
     }
 
 }
@@ -68,14 +84,28 @@ body {
 /* #region main */
 
 .jumbotron {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     .j-container {
         width: 90%;
+        margin: auto;
     }
 
 }
 
+.content-container {
+
+    width: 80%;
+    margin: auto;
+
+}
+
 /* #endregion main */
+
+/* #region footer */
+
+.f-container {
+    width: 85%;
+    margin: auto;
+}
+
+/* #endregion footer */
