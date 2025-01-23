@@ -458,9 +458,50 @@ header {
 
 /* #region footer */
 
+footer {
+    background-color: var(--db-primary-darker);
+    color: var(--db-primary-lighter);
+}
+
 .f-container {
     width: 85%;
     margin: auto;
+
+    .col {
+        flex-grow: 1;
+        padding-top: 3rem;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 1rem 0;
+
+        li {
+            font-size: 10px;
+            padding: 0.5rem 0;
+
+        }
+    }
+
+    hr {
+        width: 60%;
+    }
+
+    .lenguage {
+        padding: 2rem 0;
+        font-size: 12px;
+
+        i:last-child {
+
+            background-color: var(--db-primary-light);
+            color: var(--db-primary-darker);
+        }
+    }
+
 }
 
 /* #endregion footer */
