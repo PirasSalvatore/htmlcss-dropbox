@@ -332,6 +332,11 @@ header {
                 list-style: none;
                 font-size: 12px;
 
+                li {
+                    gap: 0.2rem;
+                    padding-bottom: 0.5rem;
+                }
+
                 i {
                     color: var(--db-primary-dark);
                 }
