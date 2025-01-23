@@ -173,11 +173,13 @@ body {
 
 header {
     background-color: var(--db-primary-lighter);
+    position: fixed;
+    width: 100%;
 }
 
 .nav-container {
     justify-content: space-between;
-    padding: 1rem 0.5rem;
+    padding: 0 0.5rem;
 
     .left-menu,
     .right-menu {
@@ -192,10 +194,16 @@ header {
         ul {
             li {
                 list-style: none;
-                padding: 0.5rem;
+                padding: 1rem 0.5rem;
+                border-bottom: 1px solid transparent;
 
                 a {
                     text-decoration: none;
+                }
+
+
+                &:hover {
+                    border-bottom: 1px solid var(--db-primary-darker);
                 }
             }
         }
@@ -210,6 +218,8 @@ header {
 
 .jumbotron {
     background-color: var(--db-primary-light);
+
+    padding-top: 5rem;
 
     .j-container {
         width: 80%;
@@ -499,7 +509,6 @@ footer {
         font-size: 12px;
 
         i:last-child {
-
             background-color: var(--db-primary-light);
             color: var(--db-primary-darker);
         }
