@@ -93,6 +93,13 @@ body {
     padding: 0.2rem 0.5rem;
 }
 
+.btn-void {
+    text-decoration: none;
+    color: var(--db-primary-darker);
+    border: 1px solid var(--db-primary-darker);
+    padding: 0.5rem;
+}
+
 /* #region row&col */
 
 .row {
@@ -386,6 +393,51 @@ header {
 
     }
 
+    .patnership {
+
+        img {
+            width: 100%;
+        }
+
+        section {
+            padding-top: 2rem;
+
+            p {
+                padding: 1rem 0;
+            }
+
+
+        }
+
+        .col-4 {
+            div:last-child {
+                padding-top: 2rem;
+            }
+        }
+    }
+
+    .operations {
+
+        h2 {
+            padding: 2rem 0;
+        }
+
+        .figure img {
+            width: 100%;
+        }
+
+        section {
+
+            h3 {
+                padding-bottom: 1rem;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+    }
 }
 
 /* #endregion main */
