@@ -21,6 +21,8 @@ body {
     --db-primary-light: #b4d0e6;
     --db-primary-dark: #0061fe;
     --db-primary-darker: #000000;
+    --bd-primary-border: #b2b2b2;
+
 }
 
 .debug {
@@ -262,7 +264,81 @@ header {
 
     .card {
         height: 100%;
+        border: 1px solid var(--bd-primary-border);
 
+        .card_container {
+            width: 90%;
+            margin: auto;
+        }
+
+
+        .type {
+            border-bottom: 1px solid var(--bd-primary-border);
+            text-align: center;
+            padding: 0.3rem;
+            font-size: 14px;
+
+        }
+
+        .offer {
+            flex-direction: column;
+            padding-top: 1rem;
+            gap: 0.5rem;
+
+            .tag {
+                color: var(--bd-primary-border);
+            }
+        }
+
+        .descriprion {
+            list-style: none;
+            padding-top: 1.3rem;
+
+            li {
+                padding: 0.5rem 0;
+                font-size: 12px;
+
+            }
+        }
+
+        .choice {
+            flex-direction: column;
+
+            .btn {
+                text-align: center;
+                font-size: 12px;
+                padding: 0.5rem;
+            }
+
+            span {
+                padding: 1.5rem 0;
+
+
+                a {
+                    color: var(--db-primary-dark);
+                }
+            }
+        }
+
+        hr {
+            width: 15%;
+        }
+
+        .more {
+            padding-top: 1.5rem;
+
+            ul {
+                padding-top: 1rem;
+                list-style: none;
+                font-size: 12px;
+
+                i {
+                    color: var(--db-primary-dark);
+                }
+            }
+
+
+        }
 
     }
 
